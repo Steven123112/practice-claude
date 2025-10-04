@@ -18,7 +18,9 @@ test('allows requests under rate limit', async () => {
     url: '/health'
   })
   expect(response.statusCode).toBe(200)
-  expect(response.json()).toEqual({ ok: true })
+  const body = response.json()
+  expect(body.ok).toBe(true)
+  expect(body.timestamp).toBeDefined()
 })
 
 test('blocks requests exceeding rate limit', async () => {
