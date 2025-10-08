@@ -15,7 +15,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "pino-abstract-transport": "^2.0.0",
+    "pino-abstract-transport": "^3.0.0",
     "vitest": "^3.2.4"
   },
   "dependencies": {
